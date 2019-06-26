@@ -1,0 +1,24 @@
+<mat-card class="example-card">
+
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ event.name }}</mat-card-title>
+      <mat-card-subtitle>{{ event.speaker }}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <br>
+
+    <img mat-card-image src="https://www.lakeheadu.ca/sites/default/files/uploads/249/SydneyStevenson2016.jpg" alt="Photo of a Shiba Inu">
+    
+    <mat-card-content>
+      <p>
+        {{ event.description }}
+      </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button>SAVE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+
+  </mat-card>

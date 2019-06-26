@@ -1,0 +1,18 @@
+<mat-list (click)="onSelect(event)" *ngFor="let event of events">
+        <mat-list-item>
+            <mat-icon matListIcon>folder</mat-icon>
+          {{ event.name }} </mat-list-item>
+        <mat-divider></mat-divider>
+      </mat-list>
+
+      <!-- <mat-list>
+          <mat-list-item *ngFor="let event of events">
+              
+            
+            <h3 matLine> {{event.name}} </h3>
+            <p matLine>
+              <span> {{event.speaker}} </span>
+              <span class="demo-2"> -- {{event.name}} </span>
+            </p>
+          </mat-list-item>
+        </mat-list> -->
