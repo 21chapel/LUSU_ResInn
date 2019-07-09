@@ -5,9 +5,8 @@ import { DetailsComponent } from './tb/details/details.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'thunderbay', component: TbComponent},
-  { path: 'thunderbay/:id', component: DetailsComponent},
+  { path: '', redirectTo: '/events'},
+  { path: '**', redirectTo: '/events'},
 ];
 
 @NgModule({
